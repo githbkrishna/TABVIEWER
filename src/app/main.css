@@ -145,6 +145,7 @@ nav {
 .textreveal .line h1 {
   font-size: 3rem;
   line-height: 4rem;
+  font-weight: bold;
 }
 
 .textreveal .line h1 span {
