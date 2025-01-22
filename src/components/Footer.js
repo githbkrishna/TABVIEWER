@@ -23,7 +23,7 @@ const Footer = () => {
                 <h3>Social</h3>
                 <ul className="footer-links social">
                     <li><a href="mailto:krishna636471@gmail.com"><i className="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkdin.com/in/hariomsingh97?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank'><i className="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/hariomsingh97/" target='blank'><i className="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/githbkrishna" target='blank'><i className="fa-brands fa-github"></i></a></li>
                 </ul>
             </div>
