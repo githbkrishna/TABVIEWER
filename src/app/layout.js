@@ -12,8 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TABVIEWER | An easy Way to View Tabs",
-  description: "3-tab responsive viewer for efficient content navigation",
+  title: "TABVIEWER | All Important tabs in one place",
+  description: "TabViewer helps you to view your browser tabs with ease & efficient content navigation . Discover a simple and efficient way to boost productivity.",
+  keywords: "tabs, viewer, content, navigation, TabViewer, browser tabs, productivity",
 };
 
 export default function RootLayout({ children }) {
