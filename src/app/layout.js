@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// import "./global.css";
+import "./main.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Add Font Awesome CDN link */}
-        // In your _document.js or the Head section:
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
