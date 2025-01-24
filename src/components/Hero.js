@@ -12,7 +12,7 @@ const Hero = () => {
     // GSAP animation code here
     gsap.from(".line h1", {
       duration: 1.8,
-      y: 100,
+      y: 200,
       ease: "power4.out",
       stagger: 0.4,
     });

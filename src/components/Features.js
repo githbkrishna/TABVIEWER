@@ -6,7 +6,7 @@ import voilet from '../app/voilet.png'
 
 const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <div className="feature-card">
         <div className="feature-icon">
           {/* <img src={red} alt="Logo" /> */}

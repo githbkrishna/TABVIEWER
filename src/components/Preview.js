@@ -61,7 +61,7 @@ const Preview = () => {
   };
 
   return (
-    <section className="preview">
+    <section className="preview" id="preview">
       <h2>Enter a URL to preview how it looks on different devices:</h2>
       <input
         type="text"

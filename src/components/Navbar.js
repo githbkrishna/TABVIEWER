@@ -15,11 +15,20 @@ const Navbar = () => {
           TABVIEWER
         </div>
         <div className="nav-links">
-          <a href="#about" onClick={() => router.push(Footer)}>About</a>
-          <a href="#letsTry">Features</a>
+          <a href="#features">Features</a>
+          <a href="#preview">Preview</a>
           <a href="#support">Support</a>
         </div>
-        <button className="letsTry">Let's Try!</button>
+        <button
+          className="letsTry"
+          onClick={() => {
+            document.getElementById('preview').scrollIntoView({
+              behavior: 'smooth',
+            });
+          }}
+        >
+          Let's Try!
+        </button>
       </nav>
     </header>
   );

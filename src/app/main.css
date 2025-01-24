@@ -13,6 +13,9 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --primary-color: #8a6fe6;
@@ -22,6 +25,7 @@
   /* --background-color: #f5eeff; */
   --background-color: #f7ebff;
   --text-color: #2d2d2d;
+  --whatsapp: #25d366;
 }
 
 body {
@@ -135,12 +139,13 @@ nav {
 
 .hero {
   width: 100%;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   margin-top: 10rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   /* background: url(red.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -149,6 +154,7 @@ nav {
 }
 
 .hero .textreveal {
+  /* height: 40vh; */
   padding: 1rem;
   text-align: center;
 }
@@ -196,13 +202,14 @@ nav {
 /* features  */
 
 .features {
+  height: 60vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 5rem 20px;
+  padding: 2rem;
   background-color: var(--white);
 }
 
@@ -211,8 +218,11 @@ nav {
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  transition: transform 0.3s;
   box-shadow: 2px 2px 5px #f8f3ff;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+  /* transform: skewX(15deg); */
 }
 
 .features h2{
@@ -221,7 +231,11 @@ nav {
 }
 
 .feature-card:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px);  */
+  /* transform: translateY(-10px) skewX(2deg);  */
+  /* transform: rotateY(15deg) rotateX(10deg); */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) scale(0.97) translateY(-10px) rotateY(-10deg);
 }
 
 .feature-icon {
@@ -461,7 +475,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2vw 0;
+  /* padding: 2vw 0; */
 }
 
 .social li {
@@ -490,3 +504,46 @@ footer {
 /* .social li:hover a {
   color: yellow;
 } */
+
+
+#waChat {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  right: 15px;
+  z-index: 9999999;
+}
+
+#waChat .waChat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#waChat a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: all;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .06), 0 2px 32px 0 rgba(0, 0, 0, .16);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--whatsapp);
+  white-space: nowrap;
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+i.fa-whatsapp{
+  font-size: 1.5rem;
+}
+
+.waChat-text{
+  margin-left: 6px;
+}
+
