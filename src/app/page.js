@@ -7,9 +7,8 @@
 // import Stats from "@/components/Stats";
 // import Image from "next/image";
 import Preview from "@/components/Preview";
-import React, { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Stats from "@/components/Stats";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
