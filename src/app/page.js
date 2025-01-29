@@ -8,7 +8,10 @@
 // import Image from "next/image";
 import Preview from "@/components/Preview";
 import Stats from "@/components/Stats";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -55,7 +58,7 @@ export default function Home() {
         start: "top 55%",
         end: "top 30%",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
       opacity: 0,
       y: 50,
