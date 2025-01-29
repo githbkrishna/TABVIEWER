@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="favicon" href="/static/1.png" type="image/png" sizes="32x32" />
         {/* Add Font Awesome CDN link */}
         <link
           rel="stylesheet"

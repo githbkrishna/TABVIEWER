@@ -202,7 +202,7 @@ nav {
 /* features  */
 
 .features {
-  height: 60vh;
+  height: 80vh;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -241,8 +241,8 @@ nav {
   /* transform: translateY(-10px) skewX(2deg);  */
   /* transform: rotateY(15deg) rotateX(10deg); */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 0, 0, 0.192) !important;
-  transform: perspective(1000px) scale(0.97) translateY(-10px) rotateY(-10deg);
+  /* background-color: rgba(255, 0, 0, 0.192) !important; */
+  transform: perspective(1000px) scale(0.97) translateY(-10px) rotateY(-10deg) !important;
 }
 
 .feature-icon {
@@ -411,6 +411,7 @@ nav {
 /* stats */
 
 .stats {
+  height: 40vh;
   display: grid;
   justify-content: center;
   align-items: center;
