@@ -50,7 +50,7 @@ export default function Home() {
         trigger: ".stats",
         start: "top 45%",
         end: "top 30%",
-        markers: true,
+        // markers: true,
       },
       opacity: 0,
       y: 50,
