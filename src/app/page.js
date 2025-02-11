@@ -1,13 +1,6 @@
 "use client";
 
-// import Features from "@/components/Features";
-// import Footer from "@/components/Footer";
-// import Hero from "@/components/Hero";
-// import Navbar from "@/components/Navbar";
-// import Stats from "@/components/Stats";
-// import Image from "next/image";
-import Preview from "@/components/Preview";
-import Stats from "@/components/Stats";
+import Preview from "@/app/components/Preview";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
@@ -55,14 +48,13 @@ export default function Home() {
     gsap.from(".stats .stat", {
       scrollTrigger: {
         trigger: ".stats",
-        start: "top 55%",
+        start: "top 45%",
         end: "top 30%",
-        scrub: true,
-        // markers: true,
+        markers: true,
       },
       opacity: 0,
       y: 50,
-      duration: 2,
+      duration: 0.8,
       delay: 0.5,
       stagger: 0.3,
     });
@@ -131,16 +123,12 @@ export default function Home() {
 
       <section className="stats">
         <div className="stat">
-          <h3>15K+</h3>
-          <p>Trusted Users</p>
-        </div>
-        <div className="stat">
-          <h3>4.7K+</h3>
+          <h3>5+</h3>
           <p>Positive Reviews</p>
         </div>
         <div className="stat">
           <h3>76%</h3>
-          <p>Reply Rate</p>
+          <p>Success Rate</p>
         </div>
       </section>
 
@@ -169,10 +157,10 @@ export default function Home() {
             <h3>Resources</h3>
             <ul className="footer-links">
               <li>
-                <a href="#about">About</a>
+                <a href="#features">Features</a>
               </li>
               <li>
-                <a href="#letsTry">Features</a>
+                <a href="#preview">Preview</a>
               </li>
               <li>
                 <a href="#support">Support</a>

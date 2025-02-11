@@ -263,14 +263,14 @@ nav {
 
 .feature-card:nth-child(1) {
   /* background: var(--white); */
-  background: url(../assets/voilet.png);
+  background: url(./assets/voilet.png);
   background-size: auto;
   /* background-repeat: no-repeat; */
   background-position: right;
 }
 
 .feature-card:nth-child(2) {
-  background: url(../assets/red.png);
+  background: url(./assets/red.png);
   /* background: var(--white); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -279,7 +279,7 @@ nav {
 
 .feature-card:nth-child(3){
   /* background: var(--primary-color); */
-  background: url(../assets/fluid.png);
+  background: url(./assets/fluid.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -416,7 +416,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
   padding: 50px 20px;
   gap: 2rem;
   background: var(--white);
