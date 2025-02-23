@@ -58,25 +58,41 @@ export default function Home() {
       delay: 0.5,
       stagger: 0.3,
     });
-
   }, []);
 
   return (
     <div className="app">
-
       <header>
-        <nav>
-          <a className="logo" href="#">
-            <div className="logo-icon"></div>
-            TABVIEWER
+        <nav className="flex justify-between items-center px-4">
+          <a
+            className="logo flex items-center space-x-2 text-xl font-semibold"
+            href="#"
+          >
+            <div className="logo-icon w-6 h-6 bg-blue-500 rounded-full"></div>
+            <span>TABVIEWER</span>
           </a>
-          <div className="nav-links">
-            <a href="#features">Features</a>
-            <a href="#preview">Preview</a>
-            <a href="#support">Support</a>
+          <div className="nav-links flex space-x-6">
+            <a
+              href="#features"
+              className="hover:text-blue-400 transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#preview"
+              className="hover:text-blue-400 transition-colors"
+            >
+              Preview
+            </a>
+            <a
+              href="#support"
+              className="hover:text-blue-400 transition-colors"
+            >
+              Support
+            </a>
           </div>
           <button
-            className="letsTry"
+            className="letsTry bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
             onClick={() => {
               document.getElementById("preview").scrollIntoView({
                 behavior: "smooth",
@@ -88,47 +104,64 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="hero">
-        <section className="textreveal">
-          <div className="line">
-            <h1>
-              Hello! <span>Community</span>
+      <section className="hero py-16">
+        <section className="textreveal text-center">
+          <div className="line mb-6">
+            <h1 className="text-4xl font-bold text-gray-800">
+              Hello! <span className="text-blue-500">Community</span>
             </h1>
           </div>
-          <div className="line">
-            <h1>Bring Change Together!</h1>
+          <div className="line mb-6">
+            <h1 className="text-4xl font-semibold text-gray-800">
+              Bring Change Together!
+            </h1>
           </div>
         </section>
-        <div className="btn">
-          <button id="getStartedBtn">Let's Get Started</button>
+        <div className="btn flex justify-center">
+          <button
+            id="getStartedBtn"
+            className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Let's Get Started
+          </button>
         </div>
       </section>
 
-      <section className="features" id="features">
-        <div className="feature-card">
-          <h2>#1</h2>
-          <p>TechTap, first in the segment!</p>
-        </div>
-        <div className="feature-card">
-          <h2>3</h2>
-          <p>Main viewport tabs in only 1 view!</p>
-        </div>
-        <div className="feature-card">
-          <h2>Cool UI</h2>
-          <p>Simple UI for better User experience!</p>
+      <section className="features bg-gray-50 py-16" id="features">
+        <div className="container mx-auto px-4 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 className="text-3xl font-semibold text-blue-500">#1</h2>
+            <p className="mt-4 text-lg text-gray-700">
+              TechTap, first in the segment!
+            </p>
+          </div>
+          <div className="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 className="text-3xl font-semibold text-blue-500">3</h2>
+            <p className="mt-4 text-lg text-gray-700">
+              Main viewport tabs in only 1 view!
+            </p>
+          </div>
+          <div className="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 className="text-3xl font-semibold text-blue-500">Cool UI</h2>
+            <p className="mt-4 text-lg text-gray-700">
+              Simple UI for better User experience!
+            </p>
+          </div>
         </div>
       </section>
 
       <Preview />
 
-      <section className="stats">
-        <div className="stat">
-          <h3>5+</h3>
-          <p>Positive Reviews</p>
-        </div>
-        <div className="stat">
-          <h3>76%</h3>
-          <p>Success Rate</p>
+      <section className="stats bg-gray-100 py-16" id="stats">
+        <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2">
+          <div className="stat p-6 rounded-lg text-center">
+            <h3 className="text-4xl font-bold text-blue-500">5+</h3>
+            <p className="mt-2 text-lg text-gray-700">Positive Reviews</p>
+          </div>
+          <div className="stat p-6 rounded-lg text-center">
+            <h3 className="text-4xl font-bold text-blue-500">76%</h3>
+            <p className="mt-2 text-lg text-gray-700">Success Rate</p>
+          </div>
         </div>
       </section>
 
